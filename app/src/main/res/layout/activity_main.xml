@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.walkmanjamannow.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/color_red"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="0.35"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="15dp"
+                android:text="Walkman Jaman Now"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_clouds"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/color_clouds"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <co.mobiwise.library.InteractivePlayerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/ipv"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                app:imageCover="@drawable/uhhh"
+
+                app:selectedAction1="@drawable/shuffle_selected"
+                app:selectedAction2="@drawable/like_selected"
+                app:selectedAction3="@drawable/replay_selected"
+                app:unselectedAction1="@drawable/shuffle_unselected"
+                app:unselectedAction2="@drawable/like_unselected"
+                app:unselectedAction3="@drawable/replay_unselected" />
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnPlay"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_trans"
+                android:textStyle="bold"
+                android:textColor="@color/color_red"
+                android:text="PLAY"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/color_clouds"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Play List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/listMusik"
+                android:entries="@array/listmusik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

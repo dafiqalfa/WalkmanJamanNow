@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Walkman Jaman Now</string>
+
+    <string-array name="listmusik">
+        <item>Walk With You</item>
+        <item>Aku Tenang</item>
+        <item>You And Me</item>
+        <item>Zona Nyaman</item>
+        <item>To Get To You</item>
+        <item>Monokrom</item>
+        <item>Thinking Out Loud</item>
+    </string-array>
+</resources>
